@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Top_storiesJSONModel : JSONModel
 
-@property (nonatomic, strong) NSString *images;
+@property (nonatomic, strong) NSArray  *images;
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSString *id;
 @property (nonatomic, strong) NSString *ga_prefix;
@@ -20,4 +20,23 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface StoriesJSONModel : JSONModel
+
+@property (nonatomic, strong) NSArray  *images;
+@property (nonatomic, strong) NSString *type;
+@property (nonatomic, strong) NSString *id;
+@property (nonatomic, strong) NSString *ga_prefix;
+@property (nonatomic, strong) NSString *title;
+
+@end
+
+
+@interface TotalJSONModel : JSONModel
+
+@property (nonatomic, copy) NSString *date;
+@property (nonatomic, copy) NSArray<Top_storiesJSONModel *>*top_stories;
+@property (nonatomic, copy) NSArray<StoriesJSONModel *>*stories;
+
+
+@end
 NS_ASSUME_NONNULL_END

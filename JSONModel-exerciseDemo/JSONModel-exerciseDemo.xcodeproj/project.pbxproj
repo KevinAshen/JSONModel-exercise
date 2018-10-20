@@ -13,8 +13,6 @@
 		041342ED217A029000486DF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041342EC217A029000486DF9 /* Assets.xcassets */; };
 		041342F0217A029000486DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041342EE217A029000486DF9 /* LaunchScreen.storyboard */; };
 		041342F3217A029000486DF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041342F2217A029000486DF9 /* main.m */; };
-		04134301217A0FF800486DF9 /* TotalJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04134300217A0FF800486DF9 /* TotalJSONModel.m */; };
-		04134304217A106000486DF9 /* StoriesJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04134303217A106000486DF9 /* StoriesJSONModel.m */; };
 		04134307217A107600486DF9 /* Top_storiesJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04134306217A107600486DF9 /* Top_storiesJSONModel.m */; };
 		C7057E8CDFF1A56504FEF6D5 /* libPods-JSONModel-exerciseDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E111BD5F1AC5456B7C25AD8A /* libPods-JSONModel-exerciseDemo.a */; };
 /* End PBXBuildFile section */
@@ -30,10 +28,6 @@
 		041342EF217A029000486DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041342F1217A029000486DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041342F2217A029000486DF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		041342FF217A0FF800486DF9 /* TotalJSONModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TotalJSONModel.h; sourceTree = "<group>"; };
-		04134300217A0FF800486DF9 /* TotalJSONModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TotalJSONModel.m; sourceTree = "<group>"; };
-		04134302217A106000486DF9 /* StoriesJSONModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoriesJSONModel.h; sourceTree = "<group>"; };
-		04134303217A106000486DF9 /* StoriesJSONModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoriesJSONModel.m; sourceTree = "<group>"; };
 		04134305217A107600486DF9 /* Top_storiesJSONModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Top_storiesJSONModel.h; sourceTree = "<group>"; };
 		04134306217A107600486DF9 /* Top_storiesJSONModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Top_storiesJSONModel.m; sourceTree = "<group>"; };
 		E111BD5F1AC5456B7C25AD8A /* libPods-JSONModel-exerciseDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSONModel-exerciseDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,10 +77,6 @@
 				041342EE217A029000486DF9 /* LaunchScreen.storyboard */,
 				041342F1217A029000486DF9 /* Info.plist */,
 				041342F2217A029000486DF9 /* main.m */,
-				041342FF217A0FF800486DF9 /* TotalJSONModel.h */,
-				04134300217A0FF800486DF9 /* TotalJSONModel.m */,
-				04134302217A106000486DF9 /* StoriesJSONModel.h */,
-				04134303217A106000486DF9 /* StoriesJSONModel.m */,
 				04134305217A107600486DF9 /* Top_storiesJSONModel.h */,
 				04134306217A107600486DF9 /* Top_storiesJSONModel.m */,
 			);
@@ -208,10 +198,8 @@
 			files = (
 				041342E8217A028E00486DF9 /* ViewController.m in Sources */,
 				041342F3217A029000486DF9 /* main.m in Sources */,
-				04134301217A0FF800486DF9 /* TotalJSONModel.m in Sources */,
 				04134307217A107600486DF9 /* Top_storiesJSONModel.m in Sources */,
 				041342E5217A028E00486DF9 /* AppDelegate.m in Sources */,
-				04134304217A106000486DF9 /* StoriesJSONModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

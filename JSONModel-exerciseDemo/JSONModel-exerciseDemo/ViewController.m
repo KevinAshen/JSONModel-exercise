@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Top_storiesJSONModel.h"
 
 
 @interface ViewController ()
@@ -30,12 +31,23 @@
     NSURLSessionDataTask *testDataTask = [testSession dataTaskWithRequest:testRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error == nil) {
             NSDictionary *obj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-            NSError *err = nil;
-            self.totalJSONModel = [[TotalJSONModel alloc] initWithDictionary:obj error:&err];
+            NSLog(@"x--%@---", obj);
+            TotalJSONModel *totalJSONModel = [[TotalJSONModel alloc] initWithDictionary:obj error:nil];
+            NSMutableArray *JSONModelMut = [[NSMutableArray alloc] init];
+            for (int i = 0; i < totalJSONModel.stories.count; i++) {
+                StoriesJSONModel *storiesJSONModel = [[StoriesJSONModel alloc] initWithDictionary:obj[@"stories"][i] error:nil];
+                [JSONModelMut addObject:storiesJSONModel];
+            }
+            NSLog(@"%ld", JSONModelMut.count);
+            for  (StoriesJSONModel *storiesJSONModel in JSONModelMut) {
+                NSLog(@"---%@---", storiesJSONModel.title);
+            }
+//            self.totalJSONModel = [[TotalJSONModel alloc] initWithDictionary:obj error:nil];
+//            NSLog(@"66---%@---", self.totalJSONModel);
         }
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"---%@---", self.totalJSONModel.date);
-        });
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            NSLog(@"2---%@---", [self.totalJSONModel.stories[0] valueForKey:@"images"][0]);
+//        });
     }];
     [testDataTask resume];
 

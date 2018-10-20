@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TotalJSONModel.h"
+
 
 @interface ViewController : UIViewController
 
-@property (nonatomic, strong) TotalJSONModel *totalJSONModel;
+
 
 
 @end

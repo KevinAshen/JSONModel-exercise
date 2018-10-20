@@ -8,6 +8,12 @@
 
 #import "Top_storiesJSONModel.h"
 
-@implementation Top_storiesJSONModel
+@implementation StoriesJSONModel
+@end
 
+@implementation Top_storiesJSONModel
+@end
+
+
+@implementation TotalJSONModel
 @end
