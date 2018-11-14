@@ -9,11 +9,31 @@
 #import "Top_storiesJSONModel.h"
 
 @implementation StoriesJSONModel
+
++(BOOL)propertyIsOptional:(NSString *)propertyName{
+    return  YES;
+}
+
 @end
 
 @implementation Top_storiesJSONModel
+
++(BOOL)propertyIsOptional:(NSString *)propertyName{
+    return  YES;
+}
+
++ (JSONKeyMapper *)keyMapper {
+    return [[JSONKeyMapper alloc] initWithModelToJSONDictionary:@{
+                                                                  @"ID":@"id",
+                                                                  @"imageStr":@"image"
+                                                                  }];
+}
 @end
 
-
 @implementation TotalJSONModel
+
++(BOOL)propertyIsOptional:(NSString *)propertyName{
+    return  YES;
+}
+
 @end
